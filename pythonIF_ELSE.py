@@ -217,8 +217,178 @@ else:
     print(F"welcome {username}")    
 
 
- Inedexing Accessing elements of Sequence using [], [start, end, step]
-
+#  Inedexing Accessing elements of Sequence using [], [start, end, step]
 credit_number = "1244-34533-54454-34242"
 last_digits = credit_number[-4:]
 print(F"XXXX-XXXX-XXXX-{last_digits}")
+
+
+# validate user input exersise
+username = input("please Enter the username: ")
+
+if len(username) >= 12:
+    print("username is no more than 12 characters")
+elif not username.find(" ") == -1:
+    print("username must not spaces")
+elif not username.isalpha():
+    print("username must not contain digits")    
+else:
+    print(F"the valid username is {username}")    
+
+
+# Indexing 
+credit_number = "12344-23123-123123-12313"
+
+print(credit_number[2])
+print(credit_number[:5])
+print(credit_number[::5])
+print(F"xxxxx-xxxx-xxxx-{credit_number[-5]}")
+
+credit_number = credit_number[::-1]
+print(credit_number)
+
+# format specifiers
+
+price1 = 34.3434
+price2 = 345.343434
+price3 = 2.345434534
+
+print(f"price 1 is {price1:.4f}")
+print(F"price 2 is {price2:.4f}")
+print(F"price 3 is {price3:.4f}")
+
+# while loop  execute some code while some condition remains true
+
+name = input("please enter the name: ")
+
+if name =="":
+    print("you dis not enter username")
+else:
+    print(f"HEllo {name}")    
+    
+while name == "":
+    print("you did not enter your name")
+    # name = input("please enter your name ")
+print(F"hello {name}")    
+
+
+age  = int(input("please enter the age: "))
+
+while age < 0:
+    print("age can't be negative")
+    age   = int(input("please enter the age: "))
+print(F"you are {age} years OLd")    
+
+food  = input("Enter a food you like (q to quite): ")
+
+while not food  == "q":
+    print(F"you like {food}")
+    food = input("enter another food you like (q to quite): ")
+print("bye")    
+
+
+num = int(input("please enter the no betweeen 1  - 10 : "))
+
+while num < 0 or num > 10:
+    print(F"your {num} is not valid")
+    num = int(input("please emter the no between 1 - 10 : "))
+print(F" the no is {num}")    
+
+# python compound Interest Calculator
+
+principle = 0
+rate = 0
+time = 0
+avr_rate = 1 + rate/100
+
+amount = principle * pow(avr_rate, time)
+
+while principle <= 0:
+    principle = float(input("Enter the principle Amount: "))
+    if principle <= 0:
+        print("principle cant be lass than or equal to zero ")    
+    break
+while rate <= 0:
+    rate = float(input("Enter the principle Amount: "))
+    if rate <= 0:
+        print("principle cant be lass than or equal to zero ") 
+    break   
+while time <= 0:
+    time = float(input("Enter the principle Amount: "))
+    if time <= 0:
+        print("principle camt be lass than or equal to zero ")    
+    break       
+print(principle)        
+print(rate)
+print(time)
+
+print(F"the amount of All Interest is {amount}")
+
+# for loops = excute ablock of code a fixed number of times
+# iterate over the range string, sequence
+
+for x in (range(1, 11)):
+    if x == 5:
+        break
+    else:
+        print(x)
+    
+import time
+# time.sleep(4)
+# print("TIME'S UP!") 
+
+my_time  = int(input("Enter the time in seconds: "))
+
+for x in range(my_time, 0, -1):
+    seconds = x % 60
+    print(F"00:00:{seconds}")
+    time.sleep(1)
+print("Time's Up")  
+
+ 
+# nested loop =     A loop within another loop (outer, inner)
+#    outer loop:
+    #   inner loop:
+
+
+rows = int(input("Enter the rows: "))
+columns = int(input("enter the colmns: "))
+symbol = input("enter the symbol: ")
+
+
+for x in range(rows):
+    for y in range(columns):
+        print(symbol, end=" ")
+    print()
+
+# Collection = single avriable used to store Multiple values
+# List [], set{}, Tuple()
+
+fruits = {"apple", "orange","banana", "coconut"}
+print(len(fruits))
+print("banana" in fruits)
+fruits.add("pineapple")
+fruits.remove("orange")
+fruits.pop()
+fruits.clear()
+
+for x in fruits:
+    print(x)
+
+
+while True:
+    food = input("Enter a food to buy (q to quite): ")
+    if food == "q":
+        break
+    else:
+        price = float(input(F"Enter the price of A {food}: $"))
+        food.append(food)
+        price.append(price)
+
+friuts = ["apple", "orange", "banana", "coconut"]
+vegetables = ["celery","carrots", "potatoes" ]
+meats = ["chiken", "fish", "turkey"]
+
+groceries = [friuts, vegetables, meats]     
+
+print(groceries[1][1] ) 
