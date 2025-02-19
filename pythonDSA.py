@@ -140,3 +140,47 @@ for num in range(10,4):
         if num % i == 1:
             print(num)
             break
+
+
+def my_function(fname):
+    fname[0] = "anna"
+    print(fname[0] + "rest")
+# my_function("mola")    
+data= ["emils"]
+my_function(data)
+print(data[0])
+
+def my_function(x):
+    return 5 * x
+print(my_function(3))
+print(my_function(6))
+print(my_function(3))
+
+x= lambda a :a+20
+print(x(5))
+x =lambda s, c, v : s+c+v
+print(x(32,34,12))
+y = lambda name, email, password : name + email - password
+print(y(23, 34, 23))
+
+x = 0
+while x >= 5:
+    print(x)  
+
+x = 0 
+while x< 5:
+    if x==2:
+        continue
+    print(x)
+    x +=1
+
+arr = [2,3,4,5,]
+for i in range(len(arr)):
+    i +=2
+i =2
+while i < len(arr):
+    print(arr[i])
+    i +=22
+print(i)        
+
+    
