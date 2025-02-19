@@ -198,3 +198,28 @@ print(b[:5])
 print(b[2:])
 print(b[5:2:-1])
 print(b[::2])
+
+a = "hello"
+b= "world"
+c = a + " " +b
+print(c)
+
+a =1
+b= "hello"
+print(F"{b} {a} {a+2}" )
+
+print("hello" in "helo World")
+
+y= int(3.0)
+z = float(3)
+
+print(z)
+print(y)
+
+
+s = "Hello, World"
+
+print(s[5])
+print(s[-2])
+print(s[1:])
+print(s[-2:])
