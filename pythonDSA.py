@@ -181,6 +181,97 @@ i =2
 while i < len(arr):
     print(arr[i])
     i +=22
-print(i)        
+print(i)  
+      
 
-    
+    for y in range(2,10):
+    print(y)          
+
+for x in range(32, 2 ,-4):
+    print(x)
+
+i=  0 
+while i <9:
+    i +=1
+    if i == 3:
+        continue
+    print(i)    
+for i in range(9):
+    if i == 3:
+        continue
+    print(i)
+
+for i in range(9):
+    if i > 3:
+        break
+    print(i)
+
+i = 2
+while i < 9:
+    print(i)
+    if i ==3:
+        break
+    i += 1
+
+fruits = ["apple", "banana", "pineapple","orange"]
+
+for fruit  in fruits:
+    if fruit == "pineapple":
+       print("found pineapple")
+       break
+else:
+#     print("pineapple not found in the list")   
+
+for num in range(10,14):
+    for i in range(2,num):
+        if num % i == 1:
+        print(num)
+            break
+            
+for num in range(10,4):
+    for i in range(2,num):
+        if num % i == 1:
+            print(num)
+            break
+
+
+def my_function(fname):
+    fname[0] = "anna"
+    print(fname[0] + "rest")
+# my_function("mola")    
+data= ["emils"]
+my_function(data)
+print(data[0])
+
+def my_function(x):
+    return 5 * x
+print(my_function(3))
+print(my_function(6))
+print(my_function(3))
+
+x= lambda a :a+20
+print(x(5))
+x =lambda s, c, v : s+c+v
+print(x(32,34,12))
+y = lambda name, email, password : name + email - password
+print(y(23, 34, 23))
+
+x = 0
+while x >= 5:
+    print(x)  
+
+x = 0 
+while x< 5:
+    if x==2:
+        continue
+    print(x)
+    x +=1
+
+arr = [2,3,4,5,]
+for i in range(len(arr)):
+    i +=2
+i =2
+while i < len(arr):
+    print(arr[i])
+    i +=22
+print(i)  
