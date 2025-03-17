@@ -9074,14 +9074,10 @@ while i < len(arr):
     print(arr[i])
     i +=22
 print(i)  
-      
-
     for y in range(2,10):
     print(y)          
-
 for x in range(32, 2 ,-4):
     print(x)
-
 i=  0 
 while i <9:
     i +=1
