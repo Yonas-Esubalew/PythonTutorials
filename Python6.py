@@ -20884,6 +20884,8 @@ while i < len(arr):
     i +=22
 print(i)  
 
+
+
 #     while balance > 0:
 #         print(F"Current balance: {balance}")  
         
